@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* Fondos por sección */
+.header {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.main {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.cards {
+  background-color: #f5f5f5;
+}
+
+.testimonials {
+  background-color: #e0e0e0;
+}
+
+.signup {
+  background-color: #d1ecf1;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+}
+
+/* Container centrado y flexible */
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  /*padding: 5vw; /* padding relativo al ancho de pantalla */
+}
+
+/* Header layout flexible sin media queries */
+.header > .container > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1vw;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+}
+
+.header li {
+  cursor: pointer;
+  color: white;
+}
+
+.cards > .container >div {
+  padding: 1vw;
+}
+.testimonials > .container >div {
+  padding: 1vw;
+}
+.signup > .container >div {
+  padding: 1vw;
+}
+.footer > .container >div {
+  padding: 1vw;
+}
