@@ -160,7 +160,6 @@ select:focus {
     justify-content: space-between;
     padding-bottom: 3em;
     padding-top: 3em;
-    border: 1px solid white;
 }
 .text{
     display: flex;
@@ -196,7 +195,6 @@ select:focus {
 }
 
 .image{
-    border: 1px solid white;
     aspect-ratio: 16 / 9; 
     width: 100%; 
     overflow: hidden;
@@ -217,6 +215,7 @@ flex-direction: column;
 justify-content: space-evenly;
 justify-items: center;
 justify-self: center;
+padding: 50px;
 }
 .head-text{
   font-size: 36px;
@@ -231,6 +230,7 @@ justify-self: center;
   display: flex;
   justify-content: space-evenly;
   gap: 10px;
+  align-items: center;
 }
 
 .cards-imgs img {
@@ -240,13 +240,86 @@ justify-self: center;
   display: block;
  }
 
+ .sqr{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
 /*--------TESTIMONIALS-------------*/
 .testimonials{
-background-color: white;
+background-color: #e5e7eb;
+padding:20px;
+}
+.testimonials .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
+.quote{
+  font-size: 36px;
+  font-weight: lighter;
+  font-style: italic;
+  color:#1f2937;
+  line-height:normal;
+}
+.user{
+  font-size: 24px;
+  font-weight: bolder;
+  align-self: flex-end;
+}
+/*********ACTION**************/
+.action{
+  background-color: white;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+.action .container{
+  background-color: #3882f6; /* Celeste */
+  color: white;
+  padding: 40px 60px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 900px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.cta-text h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.cta-text p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+.cta-button {
+  padding: 10px 25px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background-color: white;
+  color: #3882f6;
+}
 /*--------FOOTER-------------*/
 .footer{
     background-color: #1f2937;
     color:white;
+    display: flex;
+    justify-content: center;
+    padding:20px;
 }
