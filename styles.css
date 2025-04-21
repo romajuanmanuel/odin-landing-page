@@ -193,7 +193,6 @@ select:focus {
   display: flex;
   justify-self: flex-start;
   flex-shrink: initial;
-
 }
 
 .image{
@@ -215,23 +214,23 @@ select:focus {
 .cards .container{
 display: flex;
 flex-direction: column;
-justify-content: center;
-height: 15em;
+justify-content: space-evenly;
 justify-items: center;
 justify-self: center;
+}
+.head-text{
+  font-size: 36px;
+  font-weight: 900px;
 }
 
 .cards .container .head{
   justify-items: center;
-
 }
 
 .cards-imgs{
-  height: 10rem;
   display: flex;
   justify-content: space-evenly;
   gap: 10px;
-  hover:
 }
 
 .cards-imgs img {
@@ -240,9 +239,10 @@ justify-self: center;
   object-fit: cover; /* Ajusta la imagen para que llene el contenedor sin deformarse */
   display: block;
  }
+
 /*--------TESTIMONIALS-------------*/
 .testimonials{
-
+background-color: white;
 }
 
 /*--------FOOTER-------------*/
